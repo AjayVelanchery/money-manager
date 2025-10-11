@@ -26,7 +26,7 @@ WORKDIR /app
 COPY --from=build /app/target/moneymanager-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose your application's port
-EXPOSE 9090
+EXPOSE 8080
 
 # Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
