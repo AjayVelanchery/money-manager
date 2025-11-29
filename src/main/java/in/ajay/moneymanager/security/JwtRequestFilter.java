@@ -35,7 +35,7 @@ public class JwtRequestFilter extends OncePerRequestFilter {
         UserDetails userDetails = null;
         boolean isValid = false;
 
-        System.out.println("Authorization Header: " + authHeader);
+        System.out.println("Athorization Header: " + authHeader);
 
         if (authHeader != null && authHeader.startsWith("Bearer ")) {
             jwt = authHeader.substring(7); // remove "Bearer "
